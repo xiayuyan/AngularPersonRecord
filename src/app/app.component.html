@@ -1,0 +1,49 @@
+
+
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark bg-default scrolling-navbar" [containerInside]="false">
+    <logo>
+      <a class="logo navbar-brand" href="#">
+        <i class="fa fa-child"></i>
+        <strong>{{title}}</strong>
+      </a>
+    </logo>
+    <links>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a class="nav-link" routerLink="/book-list">书籍推荐</a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a class="nav-link" routerLink="/psycho-display">心理学摘抄语录</a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+          <a class="nav-link" routerLink="/book-add">添加一本新书？</a>
+        </li>
+        <li class="nav-item waves-light" mdbRippleRadius>
+            <a class="nav-link" routerLink="/psycho-add">添加新的收获语录？</a>
+          </li>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a class="nav-link">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a class="nav-link">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item waves-light" mdbRippleRadius>
+        <a class="nav-link">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </li>
+      </ul>
+    </links>
+  </mdb-navbar>
+  <main>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+                        
